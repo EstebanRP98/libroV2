@@ -6,7 +6,7 @@
 package vista;
 
 import controlador.EventoVentanaAutor;
-import controlador.GestionDato;
+import GestionDato.GestionDato1;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.LayoutManager;
@@ -34,14 +34,14 @@ public class VentanaAutor extends JFrame{
     private JButton boton2;
     private JButton boton3;
     private JPanel panelPrincipal;
-    private GestionDato gD;
+    private GestionDato1 gD;
     private Object[][] datos;
     private Object[] encabezado;
     private DefaultTableModel modeloTabla;
     private JTable tabla;
     private JScrollPane scroll;
     
-    public VentanaAutor(GestionDato gD){
+    public VentanaAutor(GestionDato1 gD){
         
         super("Registrar Autor");
         this.gD=gD;
@@ -188,11 +188,11 @@ public class VentanaAutor extends JFrame{
         this.panelPrincipal = panelPrincipal;
     }
 
-    public GestionDato getgD() {
+    public GestionDato1 getgD() {
         return gD;
     }
 
-    public void setgD(GestionDato gD) {
+    public void setgD(GestionDato1 gD) {
         this.gD = gD;
     }
 

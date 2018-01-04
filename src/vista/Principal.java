@@ -5,7 +5,7 @@
  */
 package vista;
 
-import controlador.GestionDato;
+import GestionDato.GestionDato1;
 import java.util.ArrayList;
 import java.util.List;
 import modelo.Autor;
@@ -27,7 +27,7 @@ public class Principal {
         List<Libro> libro = new ArrayList<Libro>();
         List<Autor> autor = new ArrayList<Autor>();
                 
-        GestionDato gD = new GestionDato(autor, capitulo, libro );
+        GestionDato1 gD = new GestionDato1(autor, capitulo, libro );
         
         VentanaInicial vI = new VentanaInicial(gD);
         vI.setVisible(true);

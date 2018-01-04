@@ -6,7 +6,7 @@
 package vista;
 
 import controlador.EventoVentanaInicial;
-import controlador.GestionDato;
+import GestionDato.GestionDato1;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JDesktopPane;
@@ -26,9 +26,9 @@ public class VentanaInicial extends JFrame{
     private JMenu menu2;
     private JMenu menu3; 
     private List<JMenuItem> itemMenuList;
-    private GestionDato gD;
+    private GestionDato1 gD;
 
-    public VentanaInicial(GestionDato gD){
+    public VentanaInicial(GestionDato1 gD){
         this.setTitle("Practica_3");
         this.setSize(1366, 730);
         this.setDefaultCloseOperation(3);
@@ -117,11 +117,11 @@ public class VentanaInicial extends JFrame{
         this.itemMenuList = itemMenuList;
     }
 
-    public GestionDato getgD() {
+    public GestionDato1 getgD() {
         return gD;
     }
 
-    public void setgD(GestionDato gD) {
+    public void setgD(GestionDato1 gD) {
         this.gD = gD;
     }
     

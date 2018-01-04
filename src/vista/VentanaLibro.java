@@ -7,7 +7,7 @@ package vista;
 
 import controlador.EventoVentanaCapitulo;
 import controlador.EventoVentanaLibro;
-import controlador.GestionDato;
+import GestionDato.GestionDato1;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.LayoutManager;
@@ -37,7 +37,7 @@ public class VentanaLibro extends JFrame{
     private JButton boton2;
     private JButton boton3;
     private JPanel panelPrincipal;
-    private GestionDato gD;
+    private GestionDato1 gD;
     private Object[][] datos;
     private Object[] encabezado;
     private DefaultTableModel modeloTabla;
@@ -45,7 +45,7 @@ public class VentanaLibro extends JFrame{
     private JScrollPane scroll;
     private JComboBox combo;
 
-    public VentanaLibro(GestionDato gD) {
+    public VentanaLibro(GestionDato1 gD) {
         super("Registrar Libro");
         this.gD=gD;
         this.iniciaComponentes();
@@ -198,11 +198,11 @@ public class VentanaLibro extends JFrame{
         this.panelPrincipal = panelPrincipal;
     }
 
-    public GestionDato getgD() {
+    public GestionDato1 getgD() {
         return gD;
     }
 
-    public void setgD(GestionDato gD) {
+    public void setgD(GestionDato1 gD) {
         this.gD = gD;
     }
 
